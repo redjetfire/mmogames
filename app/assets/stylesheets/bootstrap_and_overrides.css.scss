@@ -1,0 +1,100 @@
+@import "bootstrap";
+body { padding-top: 80px; background-color: #131313 !important; }
+@import "bootstrap-responsive";
+
+#main {
+  background-color: #131313 !important;
+}
+
+.content {
+  background-color: #131313;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  // -webkit-border-radius: 0 0 6px 6px;
+  // -moz-border-radius: 0 0 6px 6px;
+  // border-radius: 0 0 6px 6px;
+  // -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  // -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  // box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+ul.nav {
+  float: left;
+  color: #000000;
+  font-size: 14px;
+}
+
+.commenter {
+  margin-left: 10px;
+}
+
+.comment {
+  margin-left: 20px;
+}
+
+.navclass {
+  color: #e2d872 !important;
+  float: right !important;
+  text-align: right !important;
+  font-size: 14px;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.container {
+  background-color: #131313 !important;
+  font-family: serif !important;
+  font-size: 10px !important;
+}
+
+.navbar-inner {
+  background-color: #131313 !important;
+  background-image: none !important;
+  height: 60px !important;
+}
+
+.navigationblock {
+  background-color: #131313 !important;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  text-shadow: none !important;
+}
+
+.navbar a{
+  text-shadow: none !important;
+  font-family: serif !important;
+  color: #e2d872 !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  text-decoration: none !important;
+}
+
+.navbar a:hover{
+  font-family: serif !important;
+  color: #0088CC !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  text-decoration: none !important;
+}
+
+.brand {
+  text-shadow: none !important;
+}
+.brand a{
+  text-shadow: none !important;
+  font-family: serif !important;
+  font-weight: bold !important;
+  font-size: 20px !important;
+  text-decoration: none !important;
+}
+
+.brand a:hover{
+  text-shadow: none !important;
+  font-family: serif !important;
+  font-weight: bold !important;
+  font-size: 20px !important;
+  text-decoration: none !important;
+}

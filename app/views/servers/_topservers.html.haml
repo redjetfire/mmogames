@@ -1,0 +1,7 @@
+.categories
+  %h5 Top Servers
+  %hr.cat_hr
+  %ul.cat_list
+    - @topservers.each do |topserver|
+      %li= link_to topserver.name, topserver
+      %span= link_to topserver.category.name, topserver.category

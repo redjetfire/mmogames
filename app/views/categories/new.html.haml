@@ -1,0 +1,8 @@
+- if current_user
+  %h1 New Category
+
+  = render 'form'
+
+- else
+  %p Please Log In to add new server.
+  = link_to "Login", new_user_session_path

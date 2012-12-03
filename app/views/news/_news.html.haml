@@ -1,0 +1,11 @@
+%h4.newstitle Latest News
+= image_tag('titletop1.png', class: 'newstopborder')
+%p.newsfromtop
+  - @news.each do |novation|
+    %p.linktonovation= link_to novation.name, novation
+    %p.newsdescription= novation.description
+    / %p.novationlinktocat
+    %b.catboldlink Category :
+    %b.newscatlink= link_to novation.name, novation
+    %br
+    %br

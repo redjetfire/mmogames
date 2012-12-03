@@ -1,0 +1,259 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require jquery.ui.datepicker
+ *= require_self
+ *= require_tree .
+*/
+
+h1 h2 h3 h4 h5 ul li a {
+  font-size: 14px;
+  font-family: Arial, Georgia, 'Times New Roman', Times, serif
+}
+.categories {
+/*  width: 200px;*/
+  height: auto;
+/*  border: 2px solid white;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);*/
+}
+
+.boldinfo {
+  color: #d69e13;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: serif;
+}
+
+.categories h5 {
+  color: #d59f0f;
+  margin-top: 15px;
+}
+
+.categories a {
+  font-weight: bold;
+  color: #e2d872 !important;
+  font-size: 14px;
+  font-family: serif;
+}
+
+.categories a:hover {
+  font-weight: bold;
+  color: #FFFFFF !important;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: serif;
+}
+
+.categories a:hover{
+  font-weight: bold;
+  color: #FFFFFF !important;
+}
+
+.cat_hr {
+  color: #FFFFFF;
+  margin-top: 0;
+}
+
+ul.cat_list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cat_list li{
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+/*.categorylink {
+  color: #dbbd5d;
+}*/
+
+.appcomments {
+  margin-top: 10px;
+  padding: 5px;
+/*  width: 200px;*/
+  height: auto;
+/*  border: 2px solid white;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);*/
+}
+
+.appcomments h5 {
+  color: #d59f0f;
+}
+
+.appcomments a {
+  font-weight: bold;
+  color: #e2d872 !important;
+  font-size: 14px;
+  font-family: serif;
+}
+
+.appcomments a:hover{
+  font-weight: bold;
+  color: #FFFFFF !important;
+}
+
+li.lastcomments {
+  color: #d69e13;
+  font-size: 14px;
+  font-family: serif;
+  font-weight: bold;
+  margin-left: 5px;
+  padding: 0;
+  overflow: hidden;
+}
+
+li.email {
+  color: #dcc1a6;
+  margin-left: 10px;
+}
+
+li.comserver {
+  color: #dfd2bf;
+  text-align: right;
+  margin-top: 5px;
+}
+
+hr.commentlist {
+margin: 0;
+padding: 0;
+border: 1px dashed #FFFFFF;
+}
+
+.newstitle {
+  color: #FFFFFF;
+  font-family: serif;
+  text-align: center;
+}
+
+.newstopborder {
+  height: 10px;
+  margin-left: 5px;
+}
+
+.newstopbottomborder {
+  height: 10px;
+  margin-left: 5px;
+}
+
+.newscatlink a{
+  color: #8c5e25;
+  font-family: serif;
+  font-size: 14px;
+}
+
+.newscatlink a:hover{
+  color: #FFFFFF;
+  font-family: serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.catboldlink {
+/*  Should be FFCC00 */
+  color: #FF00CC;
+  font-family: serif;
+  font-size: 14px;
+}
+
+.newsdescription {
+  color: #dcc1a6;
+}
+
+.linktonovation a{
+  color: #e2d872;
+  font-size: 16px;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.linktonovation a:hover{
+  color: #fff8c6;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.novationlinktocat {
+  text-align: right;
+}
+
+.newsfromtop {
+  margin-top: 50px;
+}
+
+.newserverlist a{
+  color: #0088CC;
+  text-decoration: none;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.newserverlist a:hover{
+  color: #005580;
+  text-decoration: none;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+hr.scheduletop {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #d59f0f;
+}
+
+.calendarpic {
+  float: left;
+  margin-left: 50px;
+}
+.schedulelink {
+  float: left;
+  line-height: 16px;
+  width: 50px;
+  margin: 0;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+.schedulelink a{
+  margin-left: 50px;
+  color: #e2d872;
+  font-size: 16px;
+  font-family: serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.schedulelink a:hover{
+  color: #fff8c6;
+  font-size: 16px;
+  font-family: serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+hr.schedulebottom {
+  clear: both;
+  margin-top: 20px;
+  border: 1px solid #d59f0f;
+}

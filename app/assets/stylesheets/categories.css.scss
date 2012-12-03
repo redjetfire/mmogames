@@ -1,0 +1,80 @@
+// Place all the styles related to the Categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.category_name {
+  color: #FFFFFF;
+  padding-right: 5px;
+  text-align: right;
+  font-family: 'Times New Roman';
+}
+
+ul.serverlist{
+  margin: 5px 0 0 10px;
+  padding: 0;
+  list-style-type: none;
+}
+
+p.cat.description {
+  color: #dcc1a6;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+span.expansionhint {
+  color: #000000;
+}
+
+.categorylink a{
+  font-weight: bold;
+  color: #ddd67c !important;
+  font-size: 14px;
+  font-family: serif;
+}
+
+.categorylink a:hover{
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  font-family: serif;
+}
+
+.offsite {
+  text-align: right;
+}
+
+.releason {
+  text-align: right;
+}
+
+span.final {
+  color: #0088CC;
+  text-decoration: none;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+span.openbeta {
+  color: #F99F1F;
+  text-decoration: none;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+span.closebeta {
+  color: #C73E38;
+  text-decoration: none;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+span.development {
+  color: #5DBA5D;
+  text-decoration: none;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: bold;
+}

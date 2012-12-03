@@ -1,0 +1,29 @@
+%p#notice= notice
+
+%p
+  %h3.category_name= @category.name
+  %div.offsite
+    %b.boldinfo
+    %p.categorylink
+      %a{title: @category.name, href: @category.offsite, target:'_blank'} Official Site
+  %div.releason
+    %b.boldinfo Status : 
+    = status_tag(@category.released)
+  %b.boldinfo Game Description:
+  %p.cat.description= @category.description
+  %b.boldinfo Races:
+  %p.cat.description= @category.races
+  %b.boldinfo Classes:
+  %p.cat.description= @category.classes
+  %b.boldinfo Expansions:
+  %p
+  - @category.expansions.each do |expansion|
+    %p.categorylink= expansion.name
+  %b.boldinfo Servers:
+  - unless @category.blank?
+    - @category.servers.each do |server|
+      %ul.serverlist
+        %li.categorylink= link_to server.name, server
+/ = link_to 'Edit', edit_category_path(@category)
+/ \|
+/ = link_to 'Back', root_path

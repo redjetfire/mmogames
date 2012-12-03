@@ -1,0 +1,9 @@
+.appcomments
+  %h5 Last Comments
+  %hr.cat_hr
+  %ul.cat_list 
+    - @lastcomments.each do |comment|  
+      %li.lastcomments= comment.user.email
+      %li.email= comment.comment
+      %li.comserver= link_to comment.server.name, comment.server(@lastcomments)
+      %hr.commentlist

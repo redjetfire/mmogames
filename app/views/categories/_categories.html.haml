@@ -1,0 +1,6 @@
+.categories
+  %h5 Categories
+  %hr.cat_hr
+  %ul.cat_list 
+    - @categories.each do |category|
+      %li= link_to category.name, category

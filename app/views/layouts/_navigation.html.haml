@@ -1,0 +1,19 @@
+%ul.nav
+  %li
+    = link_to "Home", root_path, :class => 'navclass'
+  - if user_signed_in?
+    %li.navclass
+      = link_to current_user.email, edit_user_registration_path, :class => 'navclass'
+  - else
+    %li
+      = link_to('Sign up', new_user_registration_path, :class => 'navclass')
+  - if user_signed_in?
+    %li
+      = link_to('Logout', destroy_user_session_path, :method=>'delete', :class => 'navclass')
+    %li
+      = link_to "Add Server", new_server_path, :class => 'navclass'
+    %li
+      = link_to "Add Category", new_category_path, :class => 'navclass'
+  - else
+    %li
+      = link_to('Login', new_user_session_path, :class => 'navclass')

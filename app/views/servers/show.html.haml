@@ -1,0 +1,40 @@
+%p#notice= notice
+
+%p
+  %h4.servername= @server.name
+%br
+%p
+  %b.boldinfo Launch On :
+  = @server.try :launch_on
+%p
+  %b.boldinfo Followers :
+  %span.followers= @server.user_emails.count
+  //= @server.user_emails.join(", ")
+%p
+  %b.boldinfo Category :
+  %span.servcategname= link_to @server.category.name, @server.category
+%p
+  %b
+  - if current_user
+    - if @is_follower
+      = link_to "Unfollow", unfollow_server_path(@server), method: :post, class: 'btn btn-warning'
+    - else
+      = link_to "Follow", follow_server_path(@server), method: :post, class: 'btn btn-warning'
+%ul.cat_list
+  - @server.comments.each do |comment|
+    .com_block
+      %li.cemail
+      - if comment.user.nickname.blank?
+        %span.cemail= comment.user.email
+      - else
+        %span.cemail= comment.user.nickname
+      %li.comment.comment= comment.comment
+      - if current_user && comment.is_commenter?(current_user)
+        = link_to 'Destroy', server_comment_path(@server, comment), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'
+- if user_signed_in?
+  = form_for([@server, @server.comments.build]) do |f|
+    = f.text_area :comment, :size => "36x6", class: 'commentform'
+    %br
+    = f.submit 'Add Comment', class: 'btn btn-warning'
+- else
+  = link_to('Login', new_user_session_path, class: 'btn btn-inverse')
